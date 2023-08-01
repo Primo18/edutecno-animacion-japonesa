@@ -3,9 +3,9 @@ import { fileURLToPath } from 'url';
 import path from 'path';
 
 // __filename y __dirname no están disponibles en los módulos ES6, por lo que se debe usar el paquete 'url' para obtenerlos
-const __filename = fileURLToPath(import.meta.url); // 'file:///C:/Users/user/public/index.js' se convierte en 'C:\\Users\\user\\public\\index.js'
-const __dirname = path.resolve(__filename, '..'); // se resuelve a 'C:\\Users\\user\\public'
-let pathAnimes = path.resolve(__dirname, '../models/anime.json'); // se resuelve a 'C:\\Users\\user\\models\\animales.json'
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.resolve(__filename, '..');
+let pathAnimes = path.resolve(__dirname, '../models/anime.json');
 
 // Controlador para obtener todos los animes
 export const getAnimes = async (req, res) => {

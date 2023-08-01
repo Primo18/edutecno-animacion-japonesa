@@ -32,6 +32,39 @@ pnpm start
 2. Abre el navegador en la dirección http://localhost:3000
 3. Puedes usar herramientas como Postman para realizar peticiones HTTP a la API.
 
+## Ejemplos de uso de la API con cURL
+
+* GET: Obtener la lista de animes:
+
+```bash
+curl http://localhost:3000/api/v1/animes
+```
+
+* GET: Obtener un anime por su ID:
+
+```bash
+curl http://localhost:3000/api/v1/animes/1
+```
+
+* POST: Agregar un nuevo anime:
+
+```bash
+curl -X POST -H "Content-Type: application/json" -d '{"nombre": "One Piece", "genero": "Shonen", "año": "1999", "autor": "Eiichiro Oda"}' http://localhost:3000/api/v1/animes
+```
+
+* PUT: Actualizar un anime existente:
+
+```bash
+curl -X PUT -H "Content-Type: application/json" -d '{"nombre": "One Piece", "genero": "Shonen", "año": "1999", "autor": "Eiichiro Oda"}' http://localhost:3000/api/v1/animes/1
+```
+
+* DELETE: Eliminar un anime existente:
+
+```bash
+curl -X DELETE http://localhost:3000/api/v1/animes/1
+```
+
+
 ## Scripts
 
 - `pnpm start`: Inicia el servidor utilizando nodemon.
