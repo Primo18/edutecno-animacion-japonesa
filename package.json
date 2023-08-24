@@ -19,7 +19,7 @@
   "devDependencies": {
     "@types/express": "^4.17.17",
     "@types/fs-extra": "^11.0.1",
-    "chai": "^4.3.7",
+    "chai": "^4.3.8",
     "chai-http": "^4.4.0",
     "mocha": "^10.2.0",
     "nodemon": "^3.0.1"

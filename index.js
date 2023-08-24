@@ -2,7 +2,7 @@ import express from 'express';
 import router from './src/routes/router.js';
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 // Middlewares
 app.use(express.json());
